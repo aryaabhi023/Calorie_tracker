@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calorie Tracker</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="nav-logo">
+        <img src="diet.png" alt="" />
+        <h2>Calorie Tracker</h2>
+      </div>
+      <div id="nav-options">
+        <button id="set_limit">Set Daily Limit</button>
+        <button id="reset">Reset Day</button>
+      </div>
+    </header>
+
+    <div id="container">
+      <div id="main-body">
+        <div id="card1" class="card">
+          <h1 id="limit_count"></h1>
+          <h3>Daily Calorie Limit</h3>
+        </div>
+        <div id="card2" class="card">
+          <h1 id="total_count"></h1>
+          <h3>Gain/Loss</h3>
+        </div>
+        <div id="card3" class="card">
+          <h1 id="consumed_count"></h1>
+          <h3>Calories Consumed</h3>
+        </div>
+        <div id="card4" class="card">
+          <h1 id="burned_count"></h1>
+          <h3>Calories Burned</h3>
+        </div>
+        <div id="card5" class="card">
+          <h1 id="remaining_count"></h1>
+          <h3>Calories Remaining</h3>
+        </div>
+      </div>
+      <div id="progress"><div id="progress_inc"></div></div>
+      <div id="grid-forms">
+        <div class="grid-item">
+          <div class="filter">
+            <input id="filter1" type="text" placeholder="Filter the meals" />
+          </div>
+          <div class="grid-item-head" id="grid-item-head1">
+            <h2>Meals</h2>
+            <br />
+            <button class="grid-btn" id="grid-btn1">
+              <i class="fas fa-plus">Add Meal</i>
+            </button>
+          </div>
+          <form class="form hide" id="form1" action="">
+            <input
+              class="input"
+              id="meal_name"
+              type="text"
+              placeholder="Enter meal or item"
+            /><br />
+            <input
+              class="input"
+              id="meal_calorie"
+              type="text"
+              placeholder="Enter the calorie taken"
+            /><br />
+            <button class="form-btn" id="form-btn1">Add Meal Item</button>
+          </form>
+          <div id="meal_list"></div>
+        </div>
+        <div class="grid-item">
+          <div class="filter">
+            <input id="filter2" type="text" placeholder="Filter the workout" />
+          </div>
+          <div class="grid-item-head" id="grid-item-head1">
+            <h2>Workout</h2>
+            <br />
+            <button class="grid-btn" id="grid-btn2">
+              <i class="fas fa-plus">Add Exercise</i>
+            </button>
+          </div>
+          <form class="form hide" id="form2" action="">
+            <input
+              class="input"
+              id="workout_name"
+              type="text"
+              placeholder="Enter the type of workout"
+            /><br />
+            <input
+              class="input"
+              id="workout_calorie"
+              type="text"
+              placeholder="Enter the calorie lossed"
+            /><br />
+            <button class="form-btn" id="form-btn2">Add Workout</button>
+          </form>
+          <div id="workout_list"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
